@@ -14,6 +14,9 @@ sudo apt install openjdk-17-jdk -y
 # Install libswt-gtk-4-jni which is a dependency for STS
 sudo apt install libswt-gtk-4-jni -y
 
+sudo apt install git -y
+sudo apt install gh -y
+
 # Install STS
 STS_TARFILE=spring-tool-suite-4-4.17.1.RELEASE-e4.26.0-linux.gtk.x86_64.tar.gz
 STS_EXTRACTED_FOLDER=sts-4.17.1.RELEASE
