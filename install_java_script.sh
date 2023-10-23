@@ -25,12 +25,12 @@ STS_EXTRACTED_FOLDER=sts-4.17.1.RELEASE
 STS_BIN_FILE=/opt/apps/sts-4.17.1.RELEASE/SpringToolSuite4
 STS_SYM_LINK=/usr/local/bin/sts
 
-echo "Installing STS"
-sudo mkdir -p /opt/apps/
-tar -xzf $STS_TARFILE
-sudo mv $STS_EXTRACTED_FOLDER /opt/apps/
-sudo ln -s $STS_BIN_FILE $STS_SYM_LINK
-echo "Done"
+#echo "Installing STS"
+#sudo mkdir -p /opt/apps/
+#tar -xzf $STS_TARFILE
+#sudo mv $STS_EXTRACTED_FOLDER /opt/apps/
+#sudo ln -s $STS_BIN_FILE $STS_SYM_LINK
+#echo "Done"
 
 # Install Maven
 MVN_TARFILE=apache-maven-3.8.7-bin.tar.gz
@@ -50,10 +50,10 @@ IDEA_EXTRACTED_FOLDER=idea-IC-223.8214.52
 IDEA_BIN_FILE=/opt/apps/idea-IC-223.8214.52/bin/idea.sh
 IDEA_SYM_LINK=/usr/local/bin/idea
 
-#echo "Installing IDEA"
-#tar -xzf $IDEA_TARFILE
-#sudo mv $IDEA_EXTRACTED_FOLDER /opt/apps/
-#sudo ln -s $IDEA_BIN_FILE $IDEA_SYM_LINK
-#echo "Done"
+echo "Installing IDEA"
+tar -xzf $IDEA_TARFILE
+sudo mv $IDEA_EXTRACTED_FOLDER /opt/apps/
+sudo ln -s $IDEA_BIN_FILE $IDEA_SYM_LINK
+echo "Done"
 
 #echo "USER=$(echo $USER)"
